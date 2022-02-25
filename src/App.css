@@ -41,7 +41,6 @@
 
 .container{
   width: 700px;
-  min-height: 500px;
   border: 3px solid black;
   border-image:  linear-gradient(45deg,#fbb339, 	#fcdf99,#fbb339) 1;
   border-radius: 10px;
@@ -132,18 +131,11 @@ button > i:hover{
   color: #fb7f7f;
 }
 
-@media (max-width: 750px) {
-  .container{
-    width: 500px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-}
 
-@media (max-width: 400px){
+@media  (max-width: 750px){
   .container{
-    width: 300px;
+    width: 450px;
+    min-height: 500px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -167,5 +159,21 @@ button > i:hover{
   .details > button{
     display: inline;
   }
-
 }
+
+@media (max-width: 400px){
+ 
+  .container{
+    width: 300px;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .loader{
+    font-size: 2rem;
+  }
+}
+
+
